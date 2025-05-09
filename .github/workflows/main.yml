@@ -3,7 +3,7 @@ name: Main Taski workflow
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   tests:
@@ -52,3 +52,4 @@ jobs:
         python -m ruff check backend/
         cd backend/
         python manage.py test
+
